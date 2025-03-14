@@ -1,3 +1,9 @@
+# Uploads folder
+uploads/
+
+# dist folder
+backend/frontend/dist/
+
 # General system files
 .DS_Store
 
