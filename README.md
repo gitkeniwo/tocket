@@ -40,18 +40,18 @@ This project is configured with GitHub Actions to automatically build and push D
 To use the pre-built container:
 
 ```bash
-docker pull ghcr.io/USERNAME/tocket:latest
-docker run -p 8080:8080 -v $(pwd)/uploads:/app/uploads ghcr.io/USERNAME/tocket:latest
+mkdir tocket
+cd tocket
+docker pull ghcr.io/gitkeniwo/tocket:latest
+docker run -p 8080:8080 -v $(pwd)/uploads:/app/uploads ghcr.io/gitkeniwo/tocket:latest
 ```
-
-Replace `USERNAME` with your GitHub username.
 
 ## Manual Setup
 
 ### Prerequisites
 
 - Go (1.21 or later)
-- Node.js (16 or later)
+- Node.js (18 or later)
 - npm or yarn
 
 ### Backend Setup
